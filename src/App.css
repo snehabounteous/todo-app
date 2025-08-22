@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.task-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.task-card h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.task-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
