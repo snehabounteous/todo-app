@@ -45,34 +45,33 @@
   background-color: #fdfdfd;
 }
 
-
 h1 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-
-.form {
+/* UPDATED CLASS NAMES from .form to .task-form */
+.task-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.form input,
-.form textarea {
+.task-form input,
+.task-form textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.form textarea {
+.task-form textarea {
   resize: vertical;
   min-height: 80px;
 }
 
-.form button {
+.task-form button {
   padding: 10px;
   font-size: 16px;
   background-color: #007bff;
@@ -83,17 +82,15 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-.form button:hover {
+.task-form button:hover {
   background-color: #0056b3;
 }
-
 
 .task-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 
 .task-card {
   padding: 15px;
@@ -113,4 +110,3 @@ h1 {
   font-size: 15px;
   color: #555;
 }
-

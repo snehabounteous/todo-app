@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { useTasks } from "../context/TaskContext";
 interface TaskFormProps {
   taskName: string;
   taskDescription: string;
-  setTaskName: (value: string) => void;
-  setTaskDescription: (value: string) => void;
-  onAddTask: () => void;
+  setTaskName: React.Dispatch<React.SetStateAction<string>>;
+  setTaskDescription: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const TaskForm = ({
@@ -12,30 +12,30 @@ const TaskForm = ({
   taskDescription,
   setTaskName,
   setTaskDescription,
-  onAddTask,
 }: TaskFormProps) => {
-  const nameInputRef = useRef<HTMLInputElement>(null);
+  const { addTask } = useTasks();
 
-  useEffect(() => {
-    nameInputRef.current?.focus();
-  }, []);
-  return (<div className="form">
-    <div className="form">
+  const handleAddTask = () => {
+    if (!taskName.trim()) return;
+    addTask(taskName, taskDescription);
+    setTaskName('');
+    setTaskDescription('');
+  };
+  return (<div className="task-form">
       <input
-        ref={nameInputRef}
         type="text"
         placeholder="Task Name"
         value={taskName}
-        onChange={(e) => setTaskName(e.target.value)}
+        onChange={e => setTaskName(e.target.value)}
       />
-      <textarea
+      <input
+        type="text"
         placeholder="Task Description"
         value={taskDescription}
-        onChange={(e) => setTaskDescription(e.target.value)}
+        onChange={e => setTaskDescription(e.target.value)}
       />
-      <button onClick={onAddTask}>Add Task</button>
-    </div>
-  </div>);
+      <button onClick={handleAddTask}>Add Task</button>
+    </div>);
 };
 
 export default TaskForm;
