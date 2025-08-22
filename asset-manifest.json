@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%C2%A0https://snehabounteous.github.io/todo-app/static/css/main.a3065cf1.css",
-    "main.js": "/%C2%A0https://snehabounteous.github.io/todo-app/static/js/main.a405a9fd.js",
-    "static/js/453.7c2f868a.chunk.js": "/%C2%A0https://snehabounteous.github.io/todo-app/static/js/453.7c2f868a.chunk.js",
-    "index.html": "/%C2%A0https://snehabounteous.github.io/todo-app/index.html",
-    "main.a3065cf1.css.map": "/%C2%A0https://snehabounteous.github.io/todo-app/static/css/main.a3065cf1.css.map",
-    "main.a405a9fd.js.map": "/%C2%A0https://snehabounteous.github.io/todo-app/static/js/main.a405a9fd.js.map",
-    "453.7c2f868a.chunk.js.map": "/%C2%A0https://snehabounteous.github.io/todo-app/static/js/453.7c2f868a.chunk.js.map"
+    "main.css": "/todo-app/static/css/main.a3065cf1.css",
+    "main.js": "/todo-app/static/js/main.442b68ec.js",
+    "static/js/453.7c2f868a.chunk.js": "/todo-app/static/js/453.7c2f868a.chunk.js",
+    "index.html": "/todo-app/index.html",
+    "main.a3065cf1.css.map": "/todo-app/static/css/main.a3065cf1.css.map",
+    "main.442b68ec.js.map": "/todo-app/static/js/main.442b68ec.js.map",
+    "453.7c2f868a.chunk.js.map": "/todo-app/static/js/453.7c2f868a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3065cf1.css",
-    "static/js/main.a405a9fd.js"
+    "static/js/main.442b68ec.js"
   ]
 }
